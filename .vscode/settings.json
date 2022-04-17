@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "Makefile": "makefile",
+        "chapter_10.h": "c",
+        "sstream": "c",
+        "main.h": "c",
+        "typeinfo": "c",
+        "staticlib.h": "c"
+    }
+}

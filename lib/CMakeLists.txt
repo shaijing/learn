@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(lib VERSION 0.1.0)
+add_library(static STATIC staticlib.c)
+add_library(shared SHARED sharedlib.c)
+add_library(same_static STATIC same.c)
+set_target_properties(same_static PROPERTIES OUTPUT_NAME "same")
+set(CMAKE_VERBOSE_MAKEFILEON ON)
