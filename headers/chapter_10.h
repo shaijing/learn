@@ -18,7 +18,7 @@ typedef char cr5[5];
  * @Brief : 效果与FRPTC一样
  * @return cr5*
  */
-cr5* (*FRPTC_1)();
+//cr5* (*FRPTC_1)();
 
 
 char (*test())[5];

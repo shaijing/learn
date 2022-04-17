@@ -5,6 +5,8 @@
         "sstream": "c",
         "main.h": "c",
         "typeinfo": "c",
-        "staticlib.h": "c"
+        "staticlib.h": "c",
+        "samelib.h": "c",
+        "stdio.h": "c"
     }
 }
