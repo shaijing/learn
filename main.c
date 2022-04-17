@@ -1,7 +1,7 @@
 #include "main.h"
 
 int main() {
-loadsharedlib();
+    loadsharedlib();
     printf("Main Test\n");
     return 0;
 }

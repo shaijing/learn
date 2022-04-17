@@ -20,7 +20,7 @@ set(CMAKE_VERBOSE_MAKEFILEON ON)
 # 指定头文件搜索路径
 include_directories(lib)
 # 指定lib目录
-link_directories(${CMAKE_LIBRARY_OUTPUT_DIRECTORY}) #添加动态连接库的路径
+link_directories(${CMAKE_LIBRARY_OUTPUT_DIRECTORY}) #添加自定义动态连接库的路径
 include(CTest)
 enable_testing()
 
@@ -67,7 +67,7 @@ endif()
 # set_target_properties(shared PROPERTIES VERION 1.0 SOVERSION 1) #设置库版本及abi版本
 # add_library(same_static STATIC lib/same.c)
 # set_target_properties(same_static PROPERTIES OUTPUT_NAME "same")
-target_link_libraries(main static same) # 将动态库或共享库加入到程序中(使用有文件则加入),动态库使用dlopen则不用加入
+target_link_libraries(main static same) # 将动态库或共享库加入到程序中(使用有文件头则加入),动态库使用dlopen则不用加入
 add_subdirectory(lib ${CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG})
 
 include(CPack)
