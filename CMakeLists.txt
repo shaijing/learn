@@ -18,16 +18,19 @@ set(CMAKE_VERBOSE_MAKEFILEON ON)
 
 
 # 指定头文件搜索路径
-include_directories(lib)
+#include_directories(lib)
 # 指定lib目录
-link_directories(${CMAKE_LIBRARY_OUTPUT_DIRECTORY}) #添加自定义动态连接库的路径
+#link_directories(${CMAKE_LIBRARY_OUTPUT_DIRECTORY}) #添加自定义动态连接库的路径
 include(CTest)
 enable_testing()
-
+# link_libraries用在add_executable之前，target_link_libraries用在add_executable之后
 add_executable(main
         main.c main.h
 headers/chapter_10.h sources/chapter_10.c
 )
+# 设置到相对路径寻找库
+set_target_properties(main PROPERTIES LINK_FLAGS "-Wl,-rpath,./bin")
+
 
 # NORMAL
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME})
@@ -59,6 +62,13 @@ else()
  set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0 -Wall -g -ggdb -ldl")
  message("Default Mode(Debug):${CMAKE_C_FLAGS_DEBUG}")
 endif()
+
+
+
+# set(CMAKE_INSTALL_RPATH ${ORIGIN}/bin)
+# message("CMAKE_INSTALL_RPATH = ${CMAKE_INSTALL_RPATH}")
+
+
 
 # 若在lib文件夹下配置CMakeLists.txt，则相当于lib为一个单独项目即子项目,TODO 测试是否能解决clion不生成shared的问题,失败
 # add_library(static STATIC lib/staticlib.c) # 生成静态库

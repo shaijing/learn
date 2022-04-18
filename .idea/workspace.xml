@@ -43,17 +43,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77e78c9-c4a4-4df7-9ab4-4416a1069a33" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/learn.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/chapter_10.h" beforeDir="false" afterPath="$PROJECT_DIR$/headers/chapter_10.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/same.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/same.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/main.h" afterDir="false" />
     </list>
@@ -92,6 +85,7 @@
     "cidr.known.project.marker": "true",
     "cmake.loaded.for.project": "true",
     "last_opened_file_path": "/mnt/win-linux/WorkSpace/cProjects/learn",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "CMakeSettings"
   }
 }]]></component>
@@ -309,6 +303,8 @@
       <workItem from="1650202016801" duration="26000" />
       <workItem from="1650202141680" duration="7000" />
       <workItem from="1650202150838" duration="1104000" />
+      <workItem from="1650243552979" duration="52000" />
+      <workItem from="1650243659776" duration="1700000" />
     </task>
     <servers />
   </component>
