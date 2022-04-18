@@ -2,3 +2,6 @@
 /build/
 /build-clion/
 /cmake-build-debug/
+/.idea/
+/cmake-build/
+/.vscode/
