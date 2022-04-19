@@ -28,6 +28,6 @@ int loadsharedlib() {
     dlclose(handle);
     samelib();
     staticlib();
-    printf("Load libraries successfully!Have a good day!\n");
+    printf("Load libraries successfully!\nHave a good day!\n");
     return 0;
 }
