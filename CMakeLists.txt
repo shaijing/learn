@@ -21,9 +21,14 @@ set(CMAKE_VERBOSE_MAKEFILEON OFF)
 
 # Add header file include directories
 include_directories(include)
+include_directories(lib)
+
+get_property(
+  dirs
+  DIRECTORY ${CMAKE_SOURCE_DIR}
+  PROPERTY INCLUDE_DIRECTORIES)
+message(">>> include_dirs=${dirs}") # 打印一下目录情况
 # 方式一:直接包含路径及.cmake文件
-get_property(dirs DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
-message(">>> include_dirs=${dirs}") #打印一下目录情况
 include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/demo.cmake)
 
 # 方式二:先设置CMAKE_MODULE_PATH变量，这个变量是定义.cmake文件的搜索目录的 set(CMAKE_MODULE_PATH
@@ -108,9 +113,9 @@ endif()
 # ##############################################################################
 # GLOB 表示不递归 GLOB_RECURSE表示执行递归查找，查找目录下所有符合指定正则表达式的文件。
 file(GLOB SRC_TOP ${PROJECT_SOURCE_DIR}/*.c ${PROJECT_SOURCE_DIR}/*.h)
-file(GLOB_RECURSE SRC_SUBF ${PROJECT_SOURCE_DIR}/sources/chapter_10/*.c)
+file(GLOB_RECURSE SRC_SUB ${PROJECT_SOURCE_DIR}/src/chapter_10/*.c)
 set(libbb CMAKE_L)
-set(ALL_SRC ${SRC_TOP} ${RC_SUB})
+set(ALL_SRC ${SRC_TOP} ${SRC_SUB})
 
 add_executable(main ${ALL_SRC})
 # 设置可执行文件到相对路径寻找库
