@@ -1,4 +1,4 @@
-#include "../headers/chapter_10.h"
+#include "chapter_10/chapter_10.h"
 void drive(void) {
     FRPTC *pt;
     pt = test_2;

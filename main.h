@@ -2,7 +2,7 @@
 #define C_MAIN_H
 #include<stdio.h>
 #include <dlfcn.h>
-#include "headers/chapter_10.h"
+#include "chapter_10/chapter_10.h"
 #include "lib/staticlib.h"
 #include "lib/samelib.h"
 //#include "lib/sharedlib.h"
